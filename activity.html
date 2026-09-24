@@ -1,0 +1,465 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cuh's Coffee Shop</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f8f3ed;
+            color: #3e2723;
+        }
+
+        header {
+            background-color: #5d4037;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        nav {
+            background-color: #3e2723;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 30px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h2 {
+            color: #5d4037;
+        }
+
+        .menu {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .coffee {
+            background-color: white;
+            width: 250px;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px #ccc;
+        }
+
+        .coffee img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #8d6e63;
+        }
+
+        footer {
+            background-color: #3e2723;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .button {
+            background-color: #8d6e63;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ============================= -->
+    <!-- COFFEE SHOP HEADER -->
+    <!-- ============================= -->
+
+    <header id="main-heading">
+
+        <h1>Cuh's Coffee Shop</h1>
+
+        <p>
+            Fresh coffee, warm pastries, and good vibes every day.
+        </p>
+
+    </header>
+
+
+
+    <nav>
+
+        <a href="#home">Home</a>
+
+        <a href="#menu">Menu</a>
+
+        <a href="#multimedia">Our Shop</a>
+
+        <a href="#contact">Contact</a>
+
+    </nav>
+
+
+    <!-- ============================= -->
+    <!-- HOME -->
+    <!-- ============================= -->
+
+    <section id="home">
+
+        <h2>Welcome to Cuh's Coffee Shop</h2>
+
+        <p>
+            Welcome to Cuh's Coffee Shop!
+            We serve freshly brewed coffee and delicious pastries
+            in a cozy and relaxing place.
+        </p>
+
+        <p>
+            Whether you are studying, working, or simply relaxing,
+            we have a cup of coffee waiting for you.
+        </p>
+
+        <p>
+            <a class="button" href="#images">
+               View Our Menu
+            </a>
+        </p>
+
+    </section>
+
+
+    
+
+    <section id="images">
+
+        <h2>1. Images</h2>
+
+        <p>
+            Here are some of our favorite coffee shop items.
+        </p>
+
+       
+        <div class="menu">
+
+            <div class="coffee">
+
+                <img
+                    src="../images/coffee.jpg"
+                    alt="A cup of freshly brewed coffee">
+
+                <h3>Fresh Coffee</h3>
+
+                <p>
+                    A warm and freshly brewed cup of coffee.
+                </p>
+
+            </div>
+
+
+           
+
+            <div class="coffee">
+
+                <img
+                    src="../images/cafe.jpg"
+                    alt="A cozy coffee shop interior">
+
+                <h3>Cozy Place</h3>
+
+                <p>
+                    A comfortable place to relax and enjoy coffee.
+                </p>
+
+            </div>
+
+
+            
+
+            <div class="coffee">
+
+                <figure>
+
+                    <img
+                        src="../images/pastry.jpg"
+                        alt="A delicious pastry served at the coffee shop">
+
+                    <figcaption>
+                        Fresh pastry served with coffee.
+                    </figcaption>
+
+                </figure>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    
+
+    <section id="links">
+
+        <h2>2. Hyperlinks</h2>
+
+        <p>
+            Explore our coffee shop through these links.
+        </p>
+
+
+       
+
+        <p>
+            <a href="activity.html">
+                Internal Link: Open Our Website
+            </a>
+        </p>
+
+
+        
+
+        <p>
+            <a
+                href="https://www.google.com"
+                target="_blank">
+
+                External Link: Search on Google
+
+            </a>
+        </p>
+
+
+        
+
+        <p>
+            <a href="mailto:cuhcoffee@example.com">
+
+                Email Us
+
+            </a>
+        </p>
+
+
+       
+
+        <p>
+            <a href="#contact">
+
+                Jump to Contact Section
+
+            </a>
+        </p>
+
+    </section>
+
+
+    
+    <section id="multimedia">
+
+        <h2>3. Multimedia</h2>
+
+        <p>
+            Relax and enjoy some coffee shop sounds and a short video.
+        </p>
+
+
+        <h3>☕ Coffee Shop Audio</h3>
+
+        <audio controls>
+
+            <source
+                src="../media/music.mp3"
+                type="audio/mpeg">
+
+            Your browser does not support the audio element.
+
+        </audio>
+
+
+        <h3>🎥 Coffee Shop Video</h3>
+
+        <video
+            controls
+            width="500">
+
+            <source
+                src="../media/video.mp4"
+                type="video/mp4">
+
+            Your browser does not support the video element.
+
+        </video>
+
+    </section>
+
+
+    
+    <section id="useful-tags">
+
+        <h2>4. Useful Tags</h2>
+
+
+        
+
+        <p>
+            At Cuh's Coffee Shop, we believe that
+            <mark>good coffee</mark>
+            makes lifebetter.
+        </p>
+
+
+        
+        <p>
+            <abbr title="HyperText Markup Language">
+                HTML
+            </abbr>
+            is used to create webpages.
+        </p>
+
+
+        
+
+        <blockquote>
+
+            "Coffee is a little cup of happiness."
+
+        </blockquote>
+
+
+        
+
+        <p>
+
+            A simple HTML heading looks like:
+
+            <code>
+                &lt;h1&gt;Welcome to Cuh's Coffee Shop&lt;/h1&gt;
+            </code>
+
+        </p>
+
+    </section>
+
+
+    
+
+    <section id="dom">
+
+        <h2>5. HTML DOM</h2>
+
+        <p>
+            The HTML DOM represents a webpage as a tree
+            of elements. Each element can have a parent
+            and child elements.
+        </p>
+
+
+        <main id="main-content">
+
+            <section id="dom-section">
+
+                <h3>Our Coffee Shop DOM Example</h3>
+
+                <p>
+                    This section demonstrates how HTML elements
+                    are connected through parent and child relationships.
+                </p>
+
+                <ul>
+
+                    <li>
+                        The body is the parent of the main content.
+                    </li>
+
+                    <li>
+                        The main element is the parent of the section.
+                    </li>
+
+                    <li>
+                        The section contains the heading and paragraph.
+                    </li>
+
+                    <li>
+                        The list is the parent of the list items.
+                    </li>
+
+                </ul>
+
+            </section>
+
+        </main>
+
+    </section>
+
+
+    
+
+    <section id="contact">
+
+        <h2>Contact Us</h2>
+
+        <p>
+            Visit Cuh's Coffee Shop for your favorite
+            coffee and pastries.
+        </p>
+
+        <p>
+            📍 Butuan City, Philippines
+        </p>
+
+        <p>
+            📧
+            <a href="mailto:cuhcoffee@example.com">
+                cuhcoffee@example.com
+            </a>
+        </p>
+
+        <p>
+            ☕ Open Monday to Saturday
+        </p>
+
+    </section>
+
+
+    
+
+    <footer>
+
+        <p>
+            &copy; 2026 Cuh's Coffee Shop
+        </p>
+
+       
+
+    </footer>
+
+
+    
+
+</body>
+
+</html>
+
