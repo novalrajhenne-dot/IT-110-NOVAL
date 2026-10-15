@@ -1,0 +1,186 @@
+
+/* PART A & C: RESET AND BOX MODEL */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* PART B: BASIC ELEMENT SELECTORS */
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #465B78;
+    background-color: #F0F7FF;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: #38577D;
+}
+
+header, footer {
+    text-align: center;
+    background-color: #DCEBFF;
+    padding: 20px;
+    border: 1px solid #BBD5F5;
+}
+
+/* PART A: CASCADE DEMONSTRATION */
+
+.intro {
+    color: blue;
+    font-size: 1rem;
+}
+
+/* This rule wins because it has higher specificity than .intro. */
+.card .intro {
+    color: #5279AD;
+}
+
+/* PART B & C: CARD COMPONENTS */
+
+.card {
+    width: 500px;
+    max-width: 100%;
+    padding: 25px;
+    border: 2px solid #D5E5FA;
+    border-radius: 22px;
+    margin: 22px auto;
+    margin-bottom: 25px;
+    background-color: white;
+    text-align: left;
+}
+
+/* With border-box, the total card width is 500px.
+   The padding and borders are included in the 500px width. */
+
+#about {
+    position: relative;
+    border: 2px solid #A9C9F0;
+    background-color: #FCFDFF;
+}
+
+/* Badge positioned at the top-right corner of the About card. */
+#about::after {
+    content: "♡ PROFILE";
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 4px 10px;
+    background-color: #DCEBFF;
+    color: #5279AD;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Descendant selector: styles paragraphs inside cards. */
+.card p {
+    margin-bottom: 12px;
+    color: rgb(70, 91, 120);
+}
+
+/* Pseudo-element: styles the first letter of the intro paragraph. */
+.intro::first-letter {
+    color: #5279AD;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* PART D: NAVIGATION LINKS */
+
+nav a {
+    display: inline-block;
+    padding: 10px 16px;
+    margin: 5px;
+    background-color: white;
+    color: #5479A8;
+    text-decoration: none;
+    border: 1px solid #C6DCF8;
+    border-radius: 10px;
+}
+
+/* Pseudo-class: changes the link appearance when hovered. */
+nav a:hover {
+    background-color: #86ACDF;
+    color: white;
+}
+
+/* PART D: SKILLS FLEX LAYOUT */
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    list-style: none;
+    margin-top: 15px;
+}
+
+/* Child selector: styles only li elements directly inside the list. */
+.skills-list > li {
+    padding: 7px 14px;
+    background-color: #EAF3FF;
+    color: #5279AD;
+    border: 1px solid #D1E3FC;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+/* PART D: DISPLAY AND VISIBILITY */
+
+.hide-none {
+    display: none;
+}
+
+.hide-visibility {
+    visibility: hidden;
+}
+
+/* display:none removes the paragraph and its space.
+   visibility:hidden hides the paragraph but keeps its space. */
+
+.visible-note {
+    padding: 10px;
+    background-color: #F0F6FF;
+    border: 1px dashed #BBD5F5;
+}
+
+/* PART D: SCROLLABLE CONTENT */
+
+.scroll-box {
+    height: 120px;
+    overflow: auto;
+    padding: 12px;
+    border: 1px solid #A9C9F0;
+    border-radius: 10px;
+    background-color: #F0F7FF;
+}
+
+/* REFLECTION QUESTIONS */
+
+/*
+1. Why did one conflicting rule win?
+
+The .card .intro rule wins because it has higher specificity
+than the .intro rule. Even though both rules target the
+intro paragraph, the more specific selector takes priority.
+
+2. What is the card width if box-sizing were content-box?
+
+The width would be 500px + 25px left padding + 25px right
+padding + 2px left border + 2px right border = 554px.
+The padding and borders are added outside the 500px content width.
+
+3. When would you choose visibility: hidden instead of display: none?
+
+I would use visibility: hidden when I want to hide an element
+but keep its space on the page. This is useful when I do not
+want other elements to move when the element becomes hidden.
+*/
